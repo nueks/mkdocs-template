@@ -36,6 +36,12 @@ markdown_extensions:
 - admonition
 - pymdownx.details
 - pymdownx.superfences
+- pymdownx.betterem
+- pymdownx.caret
+- pymdownx.mark
+- pymdownx.tilde
+- pymdownx.keys
+- pymdownx.smartsymbols
 - pymdownx.highlight:
     anchor_linenums: true
 - pymdownx.inlinehilite
