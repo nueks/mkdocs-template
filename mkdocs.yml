@@ -6,16 +6,36 @@ repo_name: 'nueks/mkdocs-template'
 repo_url: 'https://github.com/nueks/mkdocs-template'
 nav:
 - Home: index.md
-- Reference: reference.md
+- Links:
+    - References: reference.md
 theme:
   name: 'material'
-  palette:
-    primary: green
   features:
   - header.autohide
   - navigation.tabs
+  - navigation.top
+  - search.highlight
   - toc.integrate
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to dark mode
+  - scheme: slate
+    primary: red
+    accent: red
+    toggle:
+      icon: material/goggle-switch-off-outline
+      name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 markdown_extensions:
+- abbr
 - admonition
 - footnotes
+- toc:
+    permalink: true
