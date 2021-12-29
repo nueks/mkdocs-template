@@ -27,7 +27,7 @@ theme:
     primary: red
     accent: red
     toggle:
-      icon: material/goggle-switch-off-outline
+      icon: material/toggle-switch-off-outline
       name: Switch to light mode
   font:
     text: Roboto
