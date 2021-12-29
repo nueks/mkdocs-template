@@ -4,10 +4,6 @@ site_author: 'nueks'
 docs_dir: 'docs/'
 repo_name: 'nueks/mkdocs-template'
 repo_url: 'https://github.com/nueks/mkdocs-template'
-nav:
-- Home: index.md
-- Links:
-    - References: reference.md
 theme:
   name: 'material'
   features:
@@ -39,3 +35,9 @@ markdown_extensions:
 - footnotes
 - toc:
     permalink: true
+
+nav:
+- Home: index.md
+- Links:
+    - References: reference.md
+    - Test: test.md
