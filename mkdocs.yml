@@ -1,9 +1,10 @@
 site_name: 'mkdocs template'
 site_description: 'A site for mkdocs template'
 site_author: 'nueks'
-docs_dir: 'docs/'
-repo_name: 'nueks/mkdocs-template'
+site_url: 'https://nueks.github.io/mkdocs-template'
+repo_name: 'Github'
 repo_url: 'https://github.com/nueks/mkdocs-template'
+docs_dir: 'docs/'
 
 theme:
   name: 'material'
