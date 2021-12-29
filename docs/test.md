@@ -1,6 +1,11 @@
 ---
 icon: material/alert-outline
 ---
+
+## Links
+- [subtitle](#subtitle)
+- [tables](test/#tables)
+
 ## Abbreviations
 
 The HTML specification is maintained by W3C.
@@ -26,7 +31,7 @@ The HTML specification is maintained by W3C.
 ??? bug
     collapsed?
 
-???+ dangaer
+???+ danger
     ```
     test 1 2 3 4
     ???+ note
