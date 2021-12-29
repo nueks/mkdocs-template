@@ -32,6 +32,7 @@ theme:
 
 markdown_extensions:
 - abbr
+- meta
 - pymdownx.snippets
 - admonition
 - pymdownx.details
@@ -58,6 +59,7 @@ markdown_extensions:
     generic: true
 - toc:
     permalink: true
+    toc_depth: 3
 - pymdownx.emoji:
     emoji_index: !!python/name:materialx.emoji.twemoji
     emoji_generator: !!python/name:materialx.emoji.to_svg
