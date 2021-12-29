@@ -3,8 +3,9 @@ icon: material/alert-outline
 ---
 
 ## Links
-- [subtitle](#subtitle)
-- [tables](test/#tables)
+- [subtitle](../#subtitle)
+- [tables](#tables)
+- [Reference](../reference)
 
 ## Abbreviations
 
