@@ -1,3 +1,6 @@
+---
+icon: material/alert-outline
+---
 ## Abbreviations
 
 The HTML specification is maintained by W3C.
@@ -134,6 +137,7 @@ The `#!python range()` function is used to generate a sequence of numbers.
 
 ![Image title](https://dummyimage.com/600x400/eee/aaa){ align=left }
 
+image align test
 
 ## Lists
 
@@ -150,6 +154,15 @@ The `#!python range()` function is used to generate a sequence of numbers.
     Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
     Nam vulputate tincidunt fringilla.
     Nullam dignissim ultrices urna non auctor.
+
+- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+- [ ] Vestibulum convallis sit amet nisi a tincidunt
+    * [x] In hac habitasse platea dictumst
+    * [x] In scelerisque nibh non dolor mollis congue sed et metus
+    * [ ] Praesent sed risus massa
+- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+
+
 
 ## MathJax
 
