@@ -1,1 +1,7 @@
-.md-footer__inner { display: none }
+.md-footer__inner {
+    display: none
+}
+
+.md-footer-meta {
+    border-top: px2rem(1px) solid var(--md-primary-fg-color)
+}
