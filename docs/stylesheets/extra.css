@@ -3,6 +3,6 @@
 }
 
 .md-footer-meta {
-    background-color: var(--md-primary-fg-color);
-    /* border-top: 0.05rem solid var(--md-primary-fg-color); */
+    /* background-color: var(--md-primary-fg-color); */
+    border-top: 0.05rem solid var(--md-primary-fg-color);
 }
