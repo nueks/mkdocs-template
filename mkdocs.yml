@@ -6,6 +6,10 @@ repo_name: 'nueks/mkdocs-template'
 repo_url: 'https://github.com/nueks/mkdocs-template'
 theme:
   name: 'material'
+  static_templates:
+  - 404.html
+  include_search_page: false
+  search_index_only: true
   features:
   - header.autohide
   - navigation.tabs
@@ -29,6 +33,10 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  # favicon: assets/favicon.png
+  # icon:
+  #   logo: logo
+
 
 markdown_extensions:
 - abbr
