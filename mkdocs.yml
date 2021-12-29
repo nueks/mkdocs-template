@@ -5,10 +5,17 @@ docs_dir: 'docs/'
 repo_name: 'nueks/mkdocs-template'
 repo_url: 'https://github.com/nueks/mkdocs-template'
 nav:
-    - Home: index.md
+- Home: index.md
+- Reference: reference.md
 theme:
   name: 'material'
   palette:
     primary: green
   features:
   - header.autohide
+  - navigation.tabs
+  - toc.integrate
+
+markdown_extensions:
+- admonition
+- footnotes
