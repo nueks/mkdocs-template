@@ -54,7 +54,7 @@ def bubble_sort(items):
 ``` yaml
 theme:
   features:
-    - content.code.annotate # (1)
+    - content.code.annotate # (1)!
 ```
 
 1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
