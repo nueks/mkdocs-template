@@ -1,9 +1,9 @@
-site_name: Test docs
-site_description: 'A docs test'
-site_author: 'Michael Hausenblas'
+site_name: 'mkdocs template'
+site_description: 'A site for mkdocs template'
+site_author: 'nueks'
 docs_dir: docs/
-repo_name: 'mhausenblas/mkdocs-template'
-repo_url: 'https://github.com/mhausenblas/mkdocs-template'
+repo_name: 'nueks/mkdocs-template'
+repo_url: 'https://github.com/nueks/mkdocs-template'
 nav:
     - Home: index.md
 theme:
