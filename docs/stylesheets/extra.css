@@ -1,7 +1,7 @@
 .md-footer__inner {
-    display: none
+    display: none;
 }
 
 .md-footer-meta {
-    border-top: px2rem(1px) solid var(--md-primary-fg-color)
+    border-top: 0.05rem solid var(--md-primary-fg-color);
 }
