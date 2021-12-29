@@ -23,7 +23,6 @@ jobs:
 
       - name: build
         run: |
-          cd docs
           mkdocs gh-deploy --force
 
 
