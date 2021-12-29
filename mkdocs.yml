@@ -22,12 +22,12 @@ theme:
   palette:
   - scheme: default
     primary: indigo
-    accent: indigo
+    accent: red
     toggle:
       icon: material/toggle-switch
       name: Switch to dark mode
   - scheme: slate
-    primary: red
+    primary: indigo
     accent: red
     toggle:
       icon: material/toggle-switch-off-outline
