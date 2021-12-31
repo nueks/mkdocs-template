@@ -3,11 +3,43 @@ icon: material/alert-outline
 ---
 
 ## Links
-- [subtitle](../#subtitle)
+
+### 내부 문서
+
+```markdown
+- [live preview](../#live-preview)
+- [tables](#tables)
+- [Reference](../reference)
+```
+
+- [live preview](../#live-preview)
 - [tables](#tables)
 - [Reference](../reference)
 
+### URL
+
+마크다운 기본 문법은 `<` `>` 을 이용해서 URL을 감싸는 것이라고 한다.
+
+github 처럼 자동으로 link 가 생성되게 하려면 [MagicLink](https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/)
+extension 을 설정해줘야 한다.
+
+```markdown
+<https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/>
+```
+
+<https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/>
+
+
 ## Abbreviations
+
+`HTML`이나 `W3C` 위에 마우스를 위치하면 간단한 설명이 나옵니다.
+
+```md
+The HTML specification is maintained by W3C.
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]: World Wide Web Consortium
+```
 
 The HTML specification is maintained by W3C.
 
@@ -51,10 +83,12 @@ def bubble_sort(items):
 ```
 
 ### add annotation
+`+` 를 클릭하면 설명을 볼 수 있습니다.
+
 ``` yaml
 theme:
   features:
-    - content.code.annotate # (1)!
+    - content.code.annotate # (1)
 ```
 
 1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
@@ -72,7 +106,7 @@ def bubble_sort(items):
 ```
 
 ### highlighting lines
-``` py hl_lines="2 3"
+``` py hl_lines="2 4"
 def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):
@@ -81,7 +115,18 @@ def bubble_sort(items):
 ```
 
 ### highlighting inline code blocks
+```md
 The `#!python range()` function is used to generate a sequence of numbers.
+```
+
+The `#!python range()` function is used to generate a sequence of numbers.
+
+### include src file
+이 기능은 해당 repo 에 있는 파일만 포함 할 수 있습니다.
+
+```python linenums="1" hl_lines="11 24-26" title=".github/workflows/deploy-mkdocs.yml"
+--8<-- ".github/workflows/deploy-mkdocs.yml"
+```
 
 
 ### tabs
@@ -123,14 +168,38 @@ The `#!python range()` function is used to generate a sequence of numbers.
     3. Nulla tempor lobortis orci
 
 ## Images
+### left align
+```md
+![image](https://dummyimage.com/600x400/eee/aaa)
+```
 
-![Image title](https://dummyimage.com/600x400/eee/aaa){ align=left }
+![image](https://dummyimage.com/600x400/eee/aaa)
+
+```md
+![Image title](https://dummyimage.com/600x400/eee/aaa){ width="300" align=left }
+```
+
+![Image title](https://dummyimage.com/600x400/eee/aaa){ width="300" align=left }
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+
+![Image title](https://dummyimage.com/600x400/eee/aaa){ width="300" align=right }
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+
+```md
+![Cat](https://static.boredpanda.com/blog/wp-content/uploads/2019/07/1-5d2cd2a0ac058__880.jpg){width="300" : .zoom .shadow .center}
+
+![Cat](https://static.boredpanda.com/blog/wp-content/uploads/2019/07/1-5d2cd2a0ac058__880.jpg){width="300" : .shadow .no-border}
+```
+
+![Cat](https://static.boredpanda.com/blog/wp-content/uploads/2019/07/1-5d2cd2a0ac058__880.jpg){width="300" : .zoom .shadow .center}
+
+![Cat](https://static.boredpanda.com/blog/wp-content/uploads/2019/07/1-5d2cd2a0ac058__880.jpg){width="300" : .shadow .no-border}
+
 
 
 
@@ -147,14 +216,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla.
 
 
 | Method      | Description                          |
-| :---------- | :----------------------------------- |
+| ----------: | -----------------------------------: |
 | `GET`       | :material-check:     Fetch resource  |
 | `PUT`       | :material-check-all: Update resource |
 | `DELETE`    | :material-close:     Delete resource |
 
-
-
 ## Lists
+
+### definition list
 
 `Lorem ipsum dolor sit amet`
 
@@ -170,6 +239,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla.
     Nam vulputate tincidunt fringilla.
     Nullam dignissim ultrices urna non auctor.
 
+### task view
 - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
 - [ ] Vestibulum convallis sit amet nisi a tincidunt
     * [x] In hac habitasse platea dictumst
@@ -180,6 +250,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla.
 
 
 ## MathJax
+
+```markdown
+$$
+\operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
+$$
+```
 
 $$
 \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}

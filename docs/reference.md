@@ -1,2 +1,2 @@
-- https://squidfunk.github.io/mkdocs-material/reference/
-- https://facelessuser.github.io/pymdown-extensions/
+- <https://squidfunk.github.io/mkdocs-material/reference/>
+- <https://facelessuser.github.io/pymdown-extensions/>
