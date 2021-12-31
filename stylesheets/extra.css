@@ -1,0 +1,45 @@
+/* .md-footer__inner { */
+/*     display: none; */
+/* } */
+
+.md-footer {
+    background-color: var(--md-default-bg-color);
+    color: var(--md-default-fg-color--light);
+}
+
+.md-footer-meta {
+    border-top: 0.05rem solid var(--md-primary-fg-color);
+    background-color: #000000;
+}
+
+/* https://github.com/squidfunk/mkdocs-material/issues/1635 */
+img {
+    border: 1px solid #9f9f9f;
+    transition: transform ease-in-out 0.3s;
+}
+
+a.md-logo img {
+    border: none;
+}
+
+img.zoom:active {
+    cursor: zomm-out;
+    transform: scale(2.0);
+}
+
+img.zoom {
+    cursor: zoom-in;
+}
+
+img.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.no-border {
+    border: 0px;
+}
+
+img.center {
+    display: block;
+    margin: auto;
+}
