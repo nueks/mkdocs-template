@@ -4,6 +4,7 @@ site_author: 'nueks'
 site_url: 'https://nueks.github.io/mkdocs-template'
 repo_name: 'Github'
 repo_url: 'https://github.com/nueks/mkdocs-template'
+copyright: Copyright &copy; 2021 - 2022 <a href="https://github.com/nueks" target="_blank">nueks</a>
 docs_dir: 'docs/'
 
 theme:
